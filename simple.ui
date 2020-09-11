@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="ttk.Frame" id="top_frame">
+    <property name="padding">10</property>
+    <layout manager="grid">
+      <property name="propagate">True</property>
+      <property name="sticky">nsew</property>
+      <property type="col" id="0" name="weight">1</property>
+      <property type="row" id="0" name="weight">1</property>
+    </layout>
+    <child>
+      <object class="ttk.Frame" id="label_frame">
+        <layout manager="grid">
+          <property name="propagate">True</property>
+          <property name="sticky">new</property>
+          <property type="col" id="0" name="weight">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="header_label">
+            <property name="font">{Arial} 16 {bold}</property>
+            <property name="text" translatable="yes">Ohm's Law Calculator</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="input_frame">
+        <property name="height">200</property>
+        <property name="padding">10</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property type="col" id="0" name="weight">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label_4">
+            <property name="text" translatable="yes">Volts:</property>
+            <layout manager="grid">
+              <property name="pady">3</property>
+              <property name="propagate">True</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_5">
+            <property name="text" translatable="yes">Ohms:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">3</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="volts_entry">
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="pady">3</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="ohms_entry">
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="pady">3</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="button_frame">
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">se</property>
+          <property type="col" id="0" name="weight">0</property>
+          <property type="row" id="2" name="weight">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="clear_button">
+            <property name="command">clear</property>
+            <property name="text" translatable="yes">Clear</property>
+            <layout manager="grid">
+              <property name="propagate">True</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="ok_button">
+            <property name="command">calculate</property>
+            <property name="text" translatable="yes">OK</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

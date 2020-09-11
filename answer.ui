@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="ttk.Frame" id="answer_frame">
+    <property name="height">200</property>
+    <property name="padding">10</property>
+    <property name="width">200</property>
+    <layout manager="grid">
+      <property name="propagate">True</property>
+      <property name="sticky">nsew</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="answer_label">
+        <property name="font">{Ariel} 16 {bold}</property>
+        <property name="text" translatable="yes">The Answer</property>
+        <property name="textvariable">string:answer_text</property>
+        <layout manager="grid">
+          <property name="pady">3</property>
+          <property name="propagate">True</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="answer_label">
+        <property name="justify">center</property>
+        <property name="textvariable">string:answer_stringvar</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
