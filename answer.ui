@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<interface version="1.0">
+<interface version="1.1">
   <object class="ttk.Frame" id="answer_frame">
     <property name="height">200</property>
     <property name="padding">10</property>
@@ -7,6 +7,8 @@
     <layout manager="grid">
       <property name="propagate">True</property>
       <property name="sticky">nsew</property>
+      <property type="col" id="0" name="weight">1</property>
+      <property type="row" id="0" name="weight">1</property>
     </layout>
     <child>
       <object class="ttk.Label" id="answer_label">
@@ -16,17 +18,20 @@
         <layout manager="grid">
           <property name="pady">3</property>
           <property name="propagate">True</property>
+          <property type="col" id="0" name="weight">1</property>
         </layout>
       </object>
     </child>
     <child>
-      <object class="ttk.Label" id="answer_label">
+      <object class="ttk.Label" id="label1">
         <property name="justify">center</property>
         <property name="textvariable">string:answer_stringvar</property>
         <layout manager="grid">
           <property name="column">0</property>
           <property name="propagate">True</property>
           <property name="row">1</property>
+          <property type="col" id="0" name="weight">1</property>
+          <property type="row" id="1" name="weight">1</property>
         </layout>
       </object>
     </child>
